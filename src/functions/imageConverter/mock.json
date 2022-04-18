@@ -1,0 +1,6 @@
+{
+	"headers": {
+		"Content-Type": "application/json"
+	},
+	"body": "{\"spotifyUrl\": \"https://i.scdn.co/image/ab67616d0000b2735da9fa8f83aebf5cbe7db12a\"}"
+}
