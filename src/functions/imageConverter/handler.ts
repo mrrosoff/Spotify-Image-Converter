@@ -13,15 +13,12 @@ const imageConverter: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async 
 	jimpImage.resize(newImageWidth, newImageWidth);
 
 	const pixels = [];
-
 	for (let i = 0; i < newImageWidth; i++) {
-		let line = [];
 		for (let j = 0; j < newImageWidth; j++) {
       const pixelValue = jimp.intToRGBA(jimpImage.getPixelColor(i, j));
       delete pixelValue.a
-      line.push(pixelValue);
+      pixels.push(pixelValue);
 		}
-		pixels.push(line);
 	}
 
 	return formatJSONResponse({ pixels });
