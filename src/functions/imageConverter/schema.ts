@@ -1,7 +1,8 @@
 export default {
-	type: "object",
-	properties: {
-		spotifyUrl: { type: "string" }
-	},
-	required: ["spotifyUrl"]
+    type: "object",
+    properties: {
+        spotifyUrl: { type: "string" },
+        newImageSize: { type: "string" }
+    },
+    required: ["spotifyUrl"]
 } as const;

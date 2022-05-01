@@ -9,7 +9,7 @@ import schema from "./schema";
 const imageConverter: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) => {
 	const jimpImage = await jimp.read(event.body.spotifyUrl);
 
-	const newImageWidth = 32;
+	const newImageWidth = parseInt(event.body.newImageSize) || 32;
 	jimpImage.resize(newImageWidth, newImageWidth);
 
 	const pixels = [];

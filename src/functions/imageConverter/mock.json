@@ -2,5 +2,5 @@
 	"headers": {
 		"Content-Type": "application/x-www-form-urlencoded"
 	},
-	"body": "spotifyUrl=https://i.scdn.co/image/ab67616d0000b2735da9fa8f83aebf5cbe7db12a"
+	"body": "spotifyUrl=https://i.scdn.co/image/ab67616d0000b2735da9fa8f83aebf5cbe7db12a&newImageSize=64"
 }
